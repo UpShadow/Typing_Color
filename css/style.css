@@ -1,0 +1,82 @@
+/* importing font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+/* removing any spacing that may come by browser default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* pseudo-classe is identical to html selector except its specificity is higher */
+:root {
+    --whitesmoke: #F9F9F9; /* variable */
+    --light-grey: #ECECEC;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+    /* For change background color */
+    --black: #000000; 
+    --blue: #1B77F3; 
+    --red: #CF3C3F; 
+    --green: #22ff00; 
+    --yellow: #eeff00;
+    --purple: #6200ff;
+    --pink: #ff00fb;
+}
+
+.input_color {
+    display: block; /* An element that has the display property set to block starts on a new line and takes up the available screen width. */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+
+.input_color span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.span_option {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: -25px 20px;
+}
+
+.text_style {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+}
+
+/* focus is a pseudo-classe too */
+.input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.input_color .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
